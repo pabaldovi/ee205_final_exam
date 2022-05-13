@@ -23,7 +23,6 @@ unsigned int string_length( const char *inString) {
 const char *trim_left(const char *inString) {
     int initial_str_length = string_length(inString);
     char trimmed_str[initial_str_length];
-    bool isCharAlpha = false;
     char prev_char;
     if (inString == nullptr) {
         return 0;
