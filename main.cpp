@@ -11,11 +11,11 @@ int main() {
               << string_length( hello ) << " characters"
               << std::endl;
 
-//    std::cout << "trim_left( hello ) = ["
-//              << trim_left( hello )
-//              << "]" << std::endl;
-//
-//    char buffer[32];
+    std::cout << "trim_left( hello ) = ["
+              << trim_left( hello )
+              << "]" << std::endl;
+
+    char buffer[32];
 //
 //    std::cout << "map_chars( \"hello\", buffer ) = ["
 //              << map_chars( "hello", buffer )
