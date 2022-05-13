@@ -16,10 +16,10 @@ int main() {
               << "]" << std::endl;
 
     char buffer[32];
-//
-//    std::cout << "map_chars( \"hello\", buffer ) = ["
-//              << map_chars( "hello", buffer )
-//              << "]" << std::endl;
+
+    std::cout << "map_chars( \"hello\", buffer ) = ["
+              << map_chars( "hello", buffer )
+              << "]" << std::endl;
 
     return 0;
 }
