@@ -23,11 +23,19 @@ unsigned int string_length( const char *inString) {
 const char *trim_left(const char *inString) {
     int initial_str_length = string_length(inString);
     char trimmed_str[initial_str_length];
+    bool isCharAlpha = false;
+    char prev_char;
     if (inString == nullptr) {
         return 0;
     }
+
+    //copy starting from first alpha char
     for (int i = 0; i < initial_str_length; i++) {
-        if (inString[i] != '-') {
+        if (i > 0){
+            prev_char = inString[i - 1];
+        }
+
+        if (prev_char =='-' && inString[i] != '-') {
             trimmed_str[i] = inString[i];
         }
     }
