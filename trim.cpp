@@ -10,18 +10,23 @@
 ///////////////////////////////////////////////////////////////////////////////
 #include "trim.h"
 
-unsigned int string_length(const char *inString) {
-    unsigned int str_length = 0;
-    char *temp_pointer;
-    for (temp_pointer = inString; *temp_pointer != '\0'; temp_pointer++) {
-        str_length++;
+unsigned int string_length( const char *inString) {
+    if (inString == nullptr) {
+        return 0;
     }
-    return str_length;
+    const char* end = inString;
+    for( ; *end != '\0'; ++end)
+        ;
+    return end - inString;
 }
 
-const char *trim_left(const char *inString) {
-    return nullptr;
-}
+//const char *trim_left(const char *inString) {
+//    if (inString == nullptr) {
+//        return 0;
+//    }
+//    for (int i )
+//
+////}
 
 char *map_chars(const char *inString, char *buffer) {
     return nullptr;
